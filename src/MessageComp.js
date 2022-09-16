@@ -4,10 +4,13 @@ import './MessageComp.css';
 
 
 
-export default function MessageComp() {
+export default function MessageComp(props) {
 	return (
 		<div className='message-class'>
-			<p>Спасибо за знания, которые Вы нам даете</p>
+			<p>{props.name}, спасибо за знания, которые Вы нам даете!</p>
 		</div>
 	)
 }
+
+// можно так:
+//  MessageComp.defaultProps = { name: 'Андрей' }

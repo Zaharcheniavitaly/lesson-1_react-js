@@ -4,7 +4,7 @@ import MessageComp from "./MessageComp";
 function App() {
 	return (
 		<div className="App">
-			<MessageComp />
+			<MessageComp name="Андрей" />
 		</div>
 	);
 }
